@@ -1,0 +1,53 @@
+.features {
+    flex-wrap: wrap;
+    article {
+        text-align: center;
+        align-items: end;
+        
+        @include breackpoint-up(large){
+            padding-left: 175px;
+            padding-right: 175px;
+        }
+    }
+
+    &__graphic {
+        background-image: url(../images/mobile/image-graphic-design.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 100%;
+        @include breackpoint-up(large){
+            background-image: url(../images/desktop/image-graphic-design.jpg);
+            height: 600px;
+            width: 50%;
+        }
+        h3 {
+            color: $DarkDesaturatedCyan;
+        }
+        p {
+            color: $DarkDesaturatedCyan;
+            margin-top: 30px;
+        }
+    }
+    &__photoraph {
+        background-image: url(../images/mobile/image-photography.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 100%;
+        @include breackpoint-up(large){
+            background-image: url(../images/desktop/image-photography.jpg);
+            height: 600px;
+            width: 50%;
+        }
+        h3 {
+            color: $DarkBlue;
+        }
+        p {
+            color: $DarkBlue;
+            margin-top: 30px;
+        }
+    }
+}

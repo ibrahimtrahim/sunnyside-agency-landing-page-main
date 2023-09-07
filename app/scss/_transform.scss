@@ -1,0 +1,33 @@
+.transform {
+    @include breackpoint-down(medium){
+        flex-wrap: wrap-reverse;
+    }
+    &__info{
+        padding-top: 70px;
+        padding-bottom: 60px;
+        text-align: center;
+        width: 100%;
+        
+        @include breackpoint-up(large){
+            padding: 170px 117px 164px 164px;
+            max-width: 50%;
+            text-align: left;
+            height: 600px;
+        }
+    }
+
+    &__image{
+        background-image: url(../images/mobile/image-transform.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 312px;
+        
+        @include breackpoint-up(large){
+            background-image: url(../images/desktop/image-transform.jpg);
+            width: 50%;
+            height: 600px;
+        }
+    }
+}

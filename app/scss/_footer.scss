@@ -1,0 +1,30 @@
+.footer{
+    background-color: #90d4c5;
+    text-align: center;
+    padding: 72px;
+
+    &__logo{
+        width: 196px;
+    }
+    &__links{
+        margin-top: 48px;
+        margin-bottom: 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+        a {
+            text-decoration: none;
+            color: $DarkModerateCyan;
+            margin: 30px;
+            transition: 300ms ease-in-out;
+            &:hover {
+                color: $White;
+            }
+        }
+    }
+    &__social {
+        img {
+            margin: 15px;
+        }
+        
+    }
+}

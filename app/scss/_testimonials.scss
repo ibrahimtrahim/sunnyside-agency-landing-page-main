@@ -1,0 +1,44 @@
+.testimonials {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    @include breackpoint-up(large){
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+    h2 {
+        font-size: 20px;
+        color: $DarkGrayishBlue;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+    &__grid {
+        padding-top: 70px;
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr;
+        @include breackpoint-up(large){
+            padding-top: 80px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+    }
+    &__client {
+        text-align: center;
+        padding: 20px;
+        img {
+            width: 80px;
+            border-radius: 50%;
+        }
+        h3 {
+            font-size: 20px;
+            color: $VeryDarkDesaturatedBlue;
+        }
+        p {
+            font-size: 18px;
+        }
+        span {
+            font-size: 16px;
+            color: $GrayishBlue;
+        }
+    }
+}

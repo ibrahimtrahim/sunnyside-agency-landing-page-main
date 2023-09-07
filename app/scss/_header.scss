@@ -1,0 +1,86 @@
+.header {
+    padding-top: 35px;
+    background-image: url(../images/mobile/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    @include breackpoint-up(large){
+        background-image: url(../images/desktop/image-header.jpg);
+        height: 100vh;
+    }
+    &__logo{
+        @include breackpoint-up(large){
+            width: 196px;
+        }
+    }
+    &__toggle{
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(-50%);
+        background: $White;
+        margin-top: 50px;
+        padding: 40px;
+        visibility: hidden;
+
+        a {
+            display: block;
+            color: $GrayishBlue;
+            margin-bottom: 40px;
+            text-align: center;
+            text-decoration: none;
+        }
+        button{
+            display: block;
+            margin: auto;
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            background-color: $Yellow;
+            padding: 22px 30px;
+            border-radius: 50px;
+        }
+        span {
+            position: absolute;
+            border-bottom: 25px solid $White;
+            border-left: 25px solid transparent;
+            right: 0;
+            top: -25px;
+        }
+    }
+
+    &__humberger{
+        cursor: pointer;
+    }
+
+    &__links{
+        a {
+            text-decoration: none;
+            color: $White;
+            margin-right: 50px;
+        }
+    }
+
+    &__hero {
+        text-align: center;
+        margin-top: 120px;
+        h1 {
+            margin: 0;
+            font-family: 'Fraunces', serif;
+            font-size: 60px;
+            font-weight: 900;
+            letter-spacing: 10px;
+            color: $White;
+            @include breackpoint-down(medium){
+                font-size: 48px;
+            }
+        }
+        img {
+            margin: 0;
+            margin-top: 60px;
+            @include breackpoint-down(medium){
+                margin-top: 120px;
+            }
+        }
+    }
+}
